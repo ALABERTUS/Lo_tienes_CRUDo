@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Consulta</title>
+</head>
+<body>
+<h1>Formulario de Consulta</h1>
+<form th:action="@{/consulta}" th:object="${consulta}" method="post">
+    <label>Fecha de consulta: <input type="date" th:field="*{consultationDate}" /></label>
+    <br/>
+    <button type="submit">Programar consulta</button>
+</form>
+</body>
+</html>
