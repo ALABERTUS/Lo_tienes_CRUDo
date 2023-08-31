@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@RestController
-@RequestMapping(path="api/v1/lo_tienes_crudo")
 
+
+
+@CrossOrigin(origins = "http://localhost:5173")
+@RestController
+@RequestMapping(path = "api/v1/consultas")
 public class ConsultaController {
     private final ConsultaService consultaService;
     @Autowired
